@@ -1,0 +1,59 @@
+.package-details {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .package-image {
+    width: 90%; /* Set a larger width percentage for responsiveness */
+    max-width: 800px; /* Allow it to grow more on larger screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: width 0.3s ease; /* Smooth resizing on screen adjustments */
+  }
+  
+  /* Add media query for larger screens */
+  @media (min-width: 1200px) {
+    .package-image {
+      width: 70%; /* Reduce width slightly for very large screens */
+    }
+  }
+  
+  /* Add media query for smaller screens */
+  @media (max-width: 600px) {
+    .package-image {
+      width: 100%; /* Use full width on smaller screens */
+    }
+  }
+  
+  .button-group {
+    margin-top: 20px;
+  }
+  
+  .back-button, .book-button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .back-button {
+    background-color: #ccc;
+    color: #000;
+  }
+  
+  .back-button:hover {
+    background-color: #bbb;
+  }
+  
+  .book-button {
+    background-color: #EA9121;
+    color: #fff;
+  }
+  
+  .book-button:hover {
+    background-color: #EA9121;
+  }
+  

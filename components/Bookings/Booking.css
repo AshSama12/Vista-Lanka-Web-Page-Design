@@ -1,0 +1,119 @@
+/* Booking page container with background image */
+.booking-container {
+  position: relative;
+  width: 100%;
+  height: 140vh; /* Further increased height */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Booking content */
+.booking-content {
+  display: flex;
+  flex-direction: column; /* Changed to vertical alignment */
+  align-items: center;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.4); /* Adjusted blur color */
+  border-radius: 20px;
+  padding: 40px;
+  margin: 20px auto;
+  width: 50%; /* Reduced size */
+}
+
+/* Booking heading */
+.booking-heading {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Flag Section */
+.flag-container {
+  text-align: center;
+  margin-bottom: 40px; /* Spacing below the flag */
+}
+
+.flag-image {
+  width: 600px;
+  height: auto;
+}
+
+/* Traveler question section */
+.traveler-question {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.traveler-title {
+  font-size: 24px; /* Larger font size */
+  font-weight: bold;
+  color: #030303;
+  margin-bottom: 15px;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Added spacing between radio buttons */
+}
+
+.radio-buttons label {
+  font-size: 18px;
+  color: #000000;
+}
+
+/* Booking Button */
+.book-now-button {
+  background-color: #EA9121;
+  color: white;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.book-now-button:hover {
+  background-color: #d1811c;
+}
+
+/* Most Famous Areas Section */
+.famous-areas {
+  text-align: center;
+  padding: 30px;
+}
+
+.famous-areas h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #020202;
+}
+
+.areas-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Increased gap between images */
+  margin-top: 20px;
+}
+
+.area-image {
+  width: 180px;
+  height: 200px;
+  border: 2px solid #ffffff; /* Added border */
+  border-radius: 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.area-image:hover {
+  transform: scale(1.1); /* Increased hover effect */
+}

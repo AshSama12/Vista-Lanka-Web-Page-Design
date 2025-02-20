@@ -1,0 +1,84 @@
+/* General Navigation Styling */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+}
+
+/* Logo Section */
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo-img {
+  width: 150px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.nav-logo-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Personal Circle Icon */
+.personal-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Responsive Menu Icon */
+.menu-icon {
+  display: none; /* Hidden by default */
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show menu icon on small screens */
+  }
+
+  .nav-links {
+    display: none; /* Hide navigation links by default */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Adjust based on your nav height */
+    right: 10px;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+
+  .nav-links.nav-open {
+    display: flex; /* Show links when nav is open */
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+}
